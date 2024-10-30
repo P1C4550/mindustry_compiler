@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 #include "ansi.h"
+#include "vector.h"
+//gcc main.c -o main_exec ; ./main_exec .\test_code.minc
 
 // mindustry logic language is abbreviated as mlog
 // the code made by the user is abbreviated as ucode
@@ -61,6 +63,12 @@ int main(int argc, char *argv[]) {
     ucode_fileptr = NULL;
 
     printf("%s", ucode);
+
+    vector v;
+    v.capacity = 10;
+    v.size = 2;
+    v.element_size = sizeof(int);
+    v.data = 
 
 	return EXIT_SUCCESS;
 }
